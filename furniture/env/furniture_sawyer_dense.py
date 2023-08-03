@@ -22,6 +22,9 @@ class FurnitureSawyerDenseRewardEnv(FurnitureSawyerEnv):
         """
         config.furniture_id = furniture_name2id[config.furniture_name]
         super().__init__(config)
+        # TODO: THANH check 
+        self._prev_init_eef_dist = 0
+        # -------------------------
 
         # common rewards
         self._diff_rew = config.diff_rew
